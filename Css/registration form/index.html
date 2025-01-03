@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration form">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration form</title>
+</head>
+
+<body>
+    <h3>Registration form</h3>
+    <form action="/action.php">
+        <h4>Personal Details</h4>
+        <div>
+            <label for="username">Name of the student</label>
+            <input type="text" id="username" placeholder="Enter your name" autofocus>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password">
+        </div>
+        <div>
+            <label for="dob">Date of birth</label>
+            <input id="dob" type="date" placeholder="Date of birth">
+        </div>
+        <div>
+            <label for="mother">Mother's name</label>
+            <input id="mother" type="text" placeholder="Mother's name">
+        </div>
+        <div>
+            <label for="father">Father's name</label>
+            <input id="father" type="text" placeholder="Father's name">
+        </div>
+        <h4>Educational details</h4>
+        <div>
+            <label for="10marks">Class 10 marks</label>
+            <input id="10marks" type="number" placeholder="Out of 600">
+        </div>
+        <div>
+            <label for="12marks">Class 12 marks</label>
+            <input id="12marks" type="number" placeholder="Out of 500">
+        </div>
+        <div>
+            <label for="jee marks">JEE marks</label>
+            <input id="jee marks" type="number" placeholder="Out of 300">
+        </div>
+        <div>
+            <ul>
+                <h5>Exams appeared in</h5>
+                <li>
+                    <label for="mains">Jee mains
+                        <input type="checkbox" name="exams" id="mains" value="mains">
+
+                    </label>
+                </li>
+                <li>
+                    <label for="adv">Jee Advance
+                        <input type="checkbox" name="exams" id="adv" value="adv">
+                    </label>
+                </li>
+                <li>
+                    <label for="CUET">CUET
+                        <input type="checkbox" name="exams" id="CUET" value="CUET">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <label for="optional">Optional Subject</label>
+            <select id="optional" name="Optonal subject">
+                <option value="Computer science">Computer Science</option>
+                <option value="Physical Education">Physical Education</option>
+                <option value="Music">Music</option>
+                <option value="Art">Art</option>
+            </select>
+        </div>
+        <h4>Financial details</h4>
+        <div>
+            <label for="income">Enter parent's income</label>
+            <input id="income" type="number" placeholder="Input Income in Rs">
+        </div>
+        <div>
+            <label for="stdincome">Enter student's income</label>
+            <input id="stdincome" type="number" placeholder="Optional">
+        </div>
+        <h4>Exam details</h4>
+        <div>
+            <label for="city">Select your city</label>
+            <select name="city" id="city">
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Prayagraj">Prayagraj</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+        </div>
+        <div>
+            <label for="Feedback">Write any remark</label>
+            <textarea id="Feedback" name="Feedback" colspan="" placeholder="Remarks"></textarea>
+        </div>
+        <div>
+            <input id="Submit" type="Submit" value="Submit">
+        </div>
+        <div>
+            <input id="Reset" type="reset" value="Reset">
+        </div>
+    </form>
+    <aside>
+    </aside>
+</body>
+
+</html>
